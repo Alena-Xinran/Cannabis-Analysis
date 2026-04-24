@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Keep nested clone metadata out of the combined project repository.
+data_collection/.git/
+data_processing/.git/
