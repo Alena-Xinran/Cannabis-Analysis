@@ -1,6 +1,6 @@
 # Data Description
 
-The raw datasets contain Reddit posts and comments from cannabis-related communities, including r/CBD, r/cannabis, r/trees, r/weed, and r/Marijuana. The data cover discussions from 2022 to 2025 and support temporal analysis of public discussion and sentiment around cannabis-derived products such as flower, oils, tinctures, gummies, edibles, vapes, and topicals.
+The raw datasets contain Reddit posts and comments from cannabis-related communities, including r/CBD, r/cannabis, r/trees, r/weed, and r/Marijuana. The data cover discussions from 2022 to 2024 and support temporal analysis of public discussion and sentiment around cannabis-derived products such as flower, oils, tinctures, gummies, edibles, vapes, and topicals.
 
 This project first cleaned a Reddit dataset by standardizing the text, removing URLs and markdown artifacts, stripping user and subreddit mentions, removing duplicate entries, and filtering out very short or low-information comments. It then used `GPT-4.1-mini` to extract multiple `(product, sentiment)` pairs from individual comments. Instead of assigning one product label and one sentiment label to an entire comment, the project treats a single comment as potentially containing multiple product-specific opinions. The final pair-level dataset stores one row per extracted pair.
 
